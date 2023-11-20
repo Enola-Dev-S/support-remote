@@ -1,7 +1,7 @@
-FROM node:alpine3.17
+FROM node:18-alpine
 
 WORKDIR /app
-
+EXPOSE 3000
 COPY . ./ 
 
 ENV PATH /app/node_modules/.bin:$PATH
